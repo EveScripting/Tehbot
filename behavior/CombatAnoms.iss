@@ -533,7 +533,7 @@ objectdef obj_CombatAnoms inherits obj_StateQueue
 		; We are in space, not in an anom, and we have no problems. Lets go to an anom.
 		if ${Client.InSpace} && !${This.InAnom} && ${StatusGreen}
 		{
-			This:LogInfo["Go to CombatAnoms Site]
+			This:LogInfo["Go to CombatAnoms Site"]
 			This:InsertState["GoToAnom", 5000]
 			return TRUE
 		}
